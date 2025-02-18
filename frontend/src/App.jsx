@@ -13,7 +13,7 @@ function App() {
 
     try {
       const response = await axios.get(
-        `http://localhost:8000/api/greet?name=${name}`
+        `https://greeting-app-backend.onrender.com/api/greet?name=${name}`
       );
       setGreet(response.data.message || response.data.error);
     } catch (error) {
